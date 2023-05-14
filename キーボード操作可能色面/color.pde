@@ -12,11 +12,17 @@ void draw() {
 }
 
 void keyPressed() {
-  if (key == 'h') {
+  if (key == 'e') {
     hue = (hue + 10) % 360;
-  } else if (key == 's') {
+  } else if (key == 'q') {
+    hue = (hue - 10) % 360;
+  } else if (key == 'd') {
     saturation = (saturation + 10) % 100;
-  } else if (key == 'l') {
+  } else if (key == 'a') {
+    saturation = (saturation - 10) % 100;
+  } else if (key == 'w') {
     luminance = (luminance + 10) % 100;
+  } else if (key == 's') {
+    luminance = (luminance - 10) % 100;
   }
 }
