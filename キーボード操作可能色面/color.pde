@@ -13,16 +13,28 @@ void draw() {
 
 void keyPressed() {
   if (key == 'e') {
-    hue = (hue + 10) % 360;
+    hue = (hue + 5) % 360;
   } else if (key == 'q') {
-    hue = (hue - 10) % 360;
+    hue = (hue - 5) % 360;
   } else if (key == 'd') {
-    saturation = (saturation + 10) % 100;
+    saturation = (saturation + 5) % 100;
   } else if (key == 'a') {
-    saturation = (saturation - 10) % 100;
+    saturation = (saturation - 5) % 100;
   } else if (key == 'w') {
-    luminance = (luminance + 10) % 100;
+    luminance = (luminance + 5) % 100;
   } else if (key == 's') {
-    luminance = (luminance - 10) % 100;
+    luminance = (luminance - 5) % 100;
+  } else if (key == 'u') {
+    hue = (hue + 1) % 360;
+  } else if (key == 'o') {
+    hue = (hue - 1) % 360;
+  } else if (key == 'j') {
+    saturation = (saturation + 1) % 100;
+  } else if (key == 'l') {
+    saturation = (saturation - 1) % 100;
+  } else if (key == 'i') {
+    luminance = (luminance + 1) % 100;
+  } else if (key == 'k') {
+    luminance = (luminance - 1) % 100;
   }
 }
