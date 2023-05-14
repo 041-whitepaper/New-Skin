@@ -3,7 +3,7 @@ float saturation = 0;
 float luminance = 0;
 
 void setup() {
-  size(640, 360);
+  size(1920, 1080);
   colorMode(HSB, 360, 100, 100);
 }
 
